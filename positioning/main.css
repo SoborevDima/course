@@ -1,0 +1,33 @@
+.hero {
+    position: relative;
+    min-height: 250px;
+    display: flex; /* will be discovered soon */
+    align-items: center; /* will be discovered soon */
+    overflow: hidden;
+    justify-content: center;
+}
+
+.hero__content {
+    position: absolute;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.75rem 1.25rem;
+    color: white;
+    width: 60%;
+    text-align: center;
+
+}
+
+.hero__image {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.hero__text {
+    font-size: 18px;
+}

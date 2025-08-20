@@ -1,0 +1,23 @@
+td {
+    border: 1px solid #000;
+    padding: 0 20px;
+    text-align: center;
+    text-align: top;
+}
+
+table:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+caption {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: smaller;
+}
+
+.boy {
+    text-align: start;
+}
