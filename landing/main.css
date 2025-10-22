@@ -300,12 +300,17 @@ h1,h2,h3 {
 }
 
 .article__content {
-    padding-left: 3rem;
+    padding-left: 6rem;
+}
+
+.article__content__reverse {
+    margin-left: 6rem;
+    padding-right: 6rem;
 }
 
 .acricle__title {
     margin-bottom: 3rem;
-    width: 41rem;
+    width: 412px;
     font-size: 2.8rem;
     line-height: 1.5;
 }
