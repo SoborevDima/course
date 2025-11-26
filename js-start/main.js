@@ -8,7 +8,7 @@ console.log("Hello from js");
 
 // let access = "";
 
-// if (age > 18) {
+// if (age === 18) {
 //     access = "Доступ разрешен";
 // } else if (age < 18 && age >=16 && age != 0) {
 //     access = "Доступ запрещен. Приходи через пару лет";
