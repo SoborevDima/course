@@ -16,12 +16,26 @@ const person = {
 //     console.log (key, person[key]);
 // }
 
-const nums = [1, 2, 3, 4];
+// const nums = [1, 2, 3, 4];
 // console.log (nums[0]);
 
-for (let num of nums) {
-    console.log(num);
+// for (let num of nums) {
+//     console.log(num);
+// }
+
+// nums.push (5, 6, 7);
+// console.log (nums);
+
+// Функции  JS
+
+const age = prompt ("Сколько вам лет?");
+
+function isOldEnough(age) {
+    if (age >= 18) {
+        return true;
+    }
+    return false;
 }
 
-nums.push (5, 6, 7);
-console.log (nums);
+const message = isOldEnough(age) ? "Welcome" : "Bye";
+alert (message);
