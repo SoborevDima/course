@@ -28,14 +28,22 @@ const person = {
 
 // Функции  JS
 
-const age = prompt ("Сколько вам лет?");
+// const age = prompt ("Сколько вам лет?");
 
-function isOldEnough(age) {
-    if (age >= 18) {
-        return true;
-    }
-    return false;
+// function isOldEnough(age) {
+//     if (age >= 18) {
+//         return true;
+//     }
+//     return false;
+// }
+
+// const message = isOldEnough(age) ? "Welcome" : "Bye";
+// alert (message);
+
+const currencyCourse = {
+    euro: 90
+    dollar: 60
 }
 
-const message = isOldEnough(age) ? "Welcome" : "Bye";
-alert (message);
+const transferToRubles = (count, currency) => couth*currency
+const rub = transferToRubles(50, currencyCourse.euro);
