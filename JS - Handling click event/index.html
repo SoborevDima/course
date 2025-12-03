@@ -19,9 +19,9 @@
     </ul>
     <br>
     <h2>Обработка событий</h2>
-    <ul onclick="alertMsg()">
-        <li>Через атрибут тега - onevent (например, onclick, onmouseover, onsubmit)</li>
-        <li>Вызов колбэка</li>
+    <ul>
+        <li onclick="alertMsg()">Через атрибут тега - onevent (например, onclick, onmouseover, onsubmit)</li>
+        <li id="test1">Вызов колбэка</li>
         <li>Выборка ноды и добавления к ней событий onevent (по ссылке)</li>
         <li>использование "листнеров" addEventListener, removeEventListener</li>
     </ul>
@@ -33,8 +33,21 @@
     </ul>
 
 <script>
-    function alertMsg() {
-        alert (`Привет из функции`);
+    // const li = document.getElementById
+    // ('test1')
+    // // li.onclick = alertMsg;
+    // li.addEventListener('click', alertMsg);
+    // // li.removeEventListener('click', alertMsg); отключение функции
+
+    // function alertMsg() {
+    //     alert (`Привет из функции`);
+    // }
+
+    var heading = document.getElementById
+    ('h1');
+    heading.onclick = function () {
+        console.log(this);
+        this.classList.toggle('active');
     }
 </script>
 </body>
