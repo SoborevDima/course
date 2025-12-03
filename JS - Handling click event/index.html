@@ -43,12 +43,20 @@
     //     alert (`Привет из функции`);
     // }
 
-    var heading = document.getElementById
-    ('h1');
-    heading.onclick = function () {
-        console.log(this);
-        this.classList.toggle('active');
+    function checkTarget (event) {
+        console.log (event);
+        console.log (event.target);
+        console.log (event.currentTarget);
+        // console.log (this.innerHTML);
     }
+
+    // var heading = document.getElementById
+    // ('h1');
+    // heading.onclick = function () {
+    //     console.log(this);
+    //     this.classList.toggle('active');
+    // }
+
 </script>
 </body>
 </html>
