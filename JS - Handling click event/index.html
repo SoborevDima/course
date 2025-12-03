@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM ivents</title>
+    <link rel="stylesheet" href="/JS - Handling click event/main.css">
+</head>
+<body>
+    <h1 id='h1'>Событий в браузере</h1>
+    <hr>
+    <h2>Типы событий</h2>
+    <ul onclick="checkTarget(event)">
+        <li><b>click</b>- нажатие левой клавиши мыши</li>
+        <li><b>contextmenu</b> - происходит, когда кликнули на элемент правой кнопкой мыши</li>
+        <li><b>mouseover</b> - когда мышь наводится на / покидает элемент</li>
+        <li><b>keydown</b> - когда пользователь нажимает / отпускает клавишу</li>
+        <li><b>submit</b> - пользователь отправил форму</li>
+    </ul>
+    <br>
+    <h2>Обработка событий</h2>
+    <ul onclick="alertMsg()">
+        <li>Через атрибут тега - onevent (например, onclick, onmouseover, onsubmit)</li>
+        <li>Вызов колбэка</li>
+        <li>Выборка ноды и добавления к ней событий onevent (по ссылке)</li>
+        <li>использование "листнеров" addEventListener, removeEventListener</li>
+    </ul>
+    <br>
+    <h2>Доступ к содержимому ноды</h2>
+    <ul>
+        <li>Через контекст this</li>
+        <li>Через объект события</li>
+    </ul>
+
+<script>
+    function alertMsg() {
+        alert (`Привет из функции`);
+    }
+</script>
+</body>
+</html>
