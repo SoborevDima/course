@@ -4,10 +4,10 @@ const img = document.querySelector
 const imgArr = ['/JS - slider/img/1.jpg, /JS - slider/img/2.jpg, /JS - slider/img/3.jpg']
 
 let currentIndex = 0;
-const imgElem: HTMLElement = document.getElementByID(elementid"img");
+const imgElem = document.getElementByID("img");
 imgElem.src = imgArr[currentIndex]
 
-function nextSlide():void {
+function nextSlide() {
     if (currentIndex < imgArr.length - 1) {
         currentIndex++;
     } else {
@@ -18,7 +18,7 @@ function nextSlide():void {
     imgElem.src = imgArr[currentIndex]
 }
 
-function prevSlide():void {
+function prevSlide() {
     if (currentIndex > 0) {
         currentIndex--;
     } else {
