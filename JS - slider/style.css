@@ -14,6 +14,10 @@
     object-fit: cover;
 }
 
+.slider__nav {
+    cursor: pointer;
+}
+
 .slider__controls {
     padding-top: 1rem;
     text-align: center;
@@ -32,4 +36,9 @@
     background-color: rgb(223, 137, 137);
     border-radius: 50%;
     display: inline-block;
+}
+
+.slider__dot.active,
+.slider__dot:hover {
+    background-color: #e43434;
 }
