@@ -1,37 +1,17 @@
 const img = document.querySelector 
-('slider__image');
+('.slider__image');
 
-const imgArr = ['/JS - slider/img/1.jpg, /JS - slider/img/2.jpg, /JS - slider/img/3.jpg']
+const imgArr = ["/JS - slider/img/1.jpg", "/JS - slider/img/2.jpg","/JS - slider/img/3.jpg"];
 
 let currentIndex = 0;
-const imgElem = document.getElementByID("img");
-imgElem.src = imgArr[currentIndex]
 
-function nextSlide() {
-    if (currentIndex < imgArr.length - 1) {
-        currentIndex++;
-    } else {
+function slide(direction) {
+    currentIndex += direction;
+    if (currentIndex >= imgArr.length) {
         currentIndex = 0;
-    }
-
-
-    imgElem.src = imgArr[currentIndex]
-}
-
-function prevSlide() {
-    if (currentIndex > 0) {
-        currentIndex--;
-    } else {
+    }   else if (currentIndex < 0) {
         currentIndex = imgArr.length - 1;
     }
-
-
-    imgElem.src = imgArr[currentIndex]
-}
-
-
-function slide(document) {
-    currentIndex += direction;
 
     img.src = imgArr[currentIndex];
 }
