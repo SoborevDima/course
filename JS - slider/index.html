@@ -15,15 +15,14 @@
         <div class="slider__controls">
             <div class="slider__dots">
                 <span class="slider__dot
-                active"></span>
-                <span class="slider__dot">
-                </span>
-                <span class="slider__dot">
-
-                </span>
+                active" onclick="changeIndex(0)"></span>
+                <span class="slider__dot"
+                onclick="changeIndex(1)"></span>
+                <span class="slider__dot"
+                onclick="changeIndex(2)"></span>
             </div>
-            <button class="slider__nav slider__nav-left" onclick="slide(-1)">&lt;</button>
-            <button class="slider__nav slider__nav-right" onclick="slide(1)">&gt;</button>
+            <button class="slider__nav slider__nav-left" onclick="nextIndex(-1)">&lt;</button>
+            <button class="slider__nav slider__nav-right" onclick="nextIndex(1)">&gt;</button>
         </div>
     </div>
 
