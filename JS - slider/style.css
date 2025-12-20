@@ -18,3 +18,18 @@
     padding-top: 1rem;
     text-align: center;
 }
+
+.slider__dots {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.slider__dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: rgb(223, 137, 137);
+    border-radius: 50%;
+    display: inline-block;
+}
