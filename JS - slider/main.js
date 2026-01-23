@@ -26,4 +26,14 @@ function nextIndex(direction) {
 
 function slide(index) {
     img.src = imgArr[index];
+
+    updateDots(index);
+}
+
+function updateDots(index) {
+    for (let dot of dots) {
+        dot.classList.remove("active");
+}
+
+dots[index].classList.add("active");
 }
