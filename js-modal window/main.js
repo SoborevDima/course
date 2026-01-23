@@ -1,7 +1,7 @@
 const btn = document.getElementById('open-modal');
 const modal = document.getElementById('modal1');
 
-const closeBtn = document.getElementById('.modal__close');
+const closeBtn = document.querySelector('.modal__close');
 
 btn.onclick = () => {
     modal.classList.add("modal_active");
