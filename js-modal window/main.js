@@ -8,10 +8,19 @@ btn.onclick = () => {
 
     closeBtn.addEventListener("click", closeModal);
 
+    modal.addEventListener('click', hideModal);
+
 
     function closeModal() {
         modal.classList.remove("modal_active");
         closeBtn.removeEventListener("click",
         closeModal);
+        modal.removeEventListener('click', hideModal);
+    }
+
+    function hideModal(event) {
+        if (event.target === modal) {
+            closeModal();
+        } 
     }
 };
