@@ -8,13 +8,14 @@ tabs.forEach((tab, index) => {
 });
 
 function changeTab(index) {
-    for (let tab of tabs) {
-        tab.classList.remove("active");
-    }
-    tabs[index].classList.add("active");
+    setActiveClass(tabs, index);
 
-    for(let el of contents) {
+    setActiveClass(contents, index);
+}
+
+function setActiveClass(arr, index) {
+    for (let el of arr) {
         el.classList.remove("active");
     }
-    contents[index].classList.add("active");
+    arr[index].classList.add("active");
 }
