@@ -1,3 +1,4 @@
+
 const prices = [120, 950, 430, 1100, 50, 2000, 310];
 let total = 0;
 
@@ -46,3 +47,20 @@ for (const student of students) {
 }
 
 console.log("Количество отличников:", topStudentsCount);
+
+const users = [
+  { name: "Ivan", isBanned: false },
+  { name: "Anna", isBanned: true },
+  { name: "Petr", isBanned: false },
+  { name: "Elena", isBanned: true }
+];
+
+const bannedNames = [];
+
+for (const user of users) {
+    if (user.isBanned === true) {
+        bannedNames.push(user.name);
+    } 
+}
+
+console.log ("Список забаненных:", bannedNames);
