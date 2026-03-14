@@ -83,3 +83,23 @@ function findLongestWord(words) {
 
     return longest;
 }
+
+
+
+
+
+const myNums = [10, 45, 2, 89, 23];
+console.log(findMax(myNums));
+
+function findMax(numbers) {
+    if (numbers.lenght === 0) return null;
+
+    let max = numbers[0];
+    for (let num of numbers){
+        if (num > max){
+            max = num;
+        }
+    }
+
+    return max;
+}
