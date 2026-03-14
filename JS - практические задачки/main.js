@@ -64,3 +64,22 @@ for (const user of users) {
 }
 
 console.log ("Список забаненных:", bannedNames);
+
+
+
+const fruits = ["яблоко", "банан", "апельсин", "киви"];
+console.log(findLongestWord(fruits));
+
+function findLongestWord(words) {
+    if (words.length === 0) return "";
+
+    let longest = words[0]; 
+
+    for (let i = 1; i < words.length; i++) {
+    if (words[i].length > longest.length) {
+    longest = words[i];
+    }
+    }
+
+    return longest;
+}
