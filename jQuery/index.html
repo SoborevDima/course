@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery basics</title>
+</head>
+<body>
+    <h1 class="h1">jQuery basics</h1>
+
+    <button id="btn">click me</button>
+
+    <button id="collapseBtn">click me too</button>
+
+    <div class="collapse" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea commodi excepturi dignissimos magni mollitia ut!</div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous">    
+    </script>
+
+    <script>
+        const heading = $('.h1');
+        heading.css ({
+            'text-transform': 'uppercase', 'color': 'blue'
+        });
+
+        $('#btn').on('click', () => {
+            heading.toggleClass('active');
+        })
+
+        const div = $('.collapse');
+        $('#collapseBtn').on('click', () => {
+            div.fadeToggle();
+        });
+
+
+    </script>
+
+</body>
+</html>
