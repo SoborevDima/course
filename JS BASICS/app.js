@@ -45,6 +45,7 @@ switch (spainCapital) {
         isCorrectAnswer = false;
 }
 
+
 const a = 1;
 const b = 2;
 let result;
@@ -56,4 +57,16 @@ if (a + b < 4) {
 }
 
 //Тернарный оператор 
-console.log ('result', a + b < 4 ? 'мало' : 'много');
+console.log('result', a + b < 4 ? 'мало' : 'много');
+
+
+//Практика с массивами 
+const numbers = [1,2,3]
+let luckyNumber = numbers[2];
+console.log (luckyNumber);
+
+numbers.pop();
+numbers.push(33);
+numbers.push(55);
+numbers.push(66);
+console.log(numbers);
